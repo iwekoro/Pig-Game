@@ -1,0 +1,167 @@
+[debug] [2024-08-18T09:39:41.691Z] ----------------------------------------------------------------------
+[debug] [2024-08-18T09:39:41.695Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Damilola\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-08-18T09:39:41.695Z] CLI Version:   13.15.2
+[debug] [2024-08-18T09:39:41.696Z] Platform:      win32
+[debug] [2024-08-18T09:39:41.696Z] Node Version:  v20.16.0
+[debug] [2024-08-18T09:39:41.696Z] Time:          Sun Aug 18 2024 10:39:41 GMT+0100 (British Summer Time)
+[debug] [2024-08-18T09:39:41.696Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-18T09:39:41.701Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-08-18T09:39:41.776Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-18T09:39:41.776Z] > authorizing via signed-in user (daodunaiya@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\dev\Pig Game
+
+[debug] [2024-08-18T09:39:42.682Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-08-18T09:39:42.682Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-08-18T09:40:09.444Z] > refreshing access token with scopes: []
+[debug] [2024-08-18T09:40:09.446Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-08-18T09:40:09.446Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-18T09:40:09.941Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-08-18T09:40:09.941Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-18T09:40:09.952Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-08-18T09:40:09.953Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"pig-game","name":"pig-game"}
+[debug] [2024-08-18T09:40:11.598Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2024-08-18T09:40:11.598Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-08-18T09:40:11.926Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\Damilola\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Damilola\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID pig-game. Please try again with a unique project ID.
+[debug] [2024-08-18T09:40:32.365Z] ----------------------------------------------------------------------
+[debug] [2024-08-18T09:40:32.369Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Damilola\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-08-18T09:40:32.369Z] CLI Version:   13.15.2
+[debug] [2024-08-18T09:40:32.370Z] Platform:      win32
+[debug] [2024-08-18T09:40:32.370Z] Node Version:  v20.16.0
+[debug] [2024-08-18T09:40:32.370Z] Time:          Sun Aug 18 2024 10:40:32 GMT+0100 (British Summer Time)
+[debug] [2024-08-18T09:40:32.370Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-18T09:40:32.380Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-18T09:40:32.381Z] > authorizing via signed-in user (daodunaiya@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\dev\Pig Game
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-08-18T09:40:50.073Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-08-18T09:40:50.074Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"pig-game","name":"pigGame"}
+[debug] [2024-08-18T09:40:51.157Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2024-08-18T09:40:51.157Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-08-18T09:40:51.871Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\Damilola\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Damilola\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID pig-game. Please try again with a unique project ID.
+[debug] [2024-08-18T09:41:05.858Z] ----------------------------------------------------------------------
+[debug] [2024-08-18T09:41:05.863Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Damilola\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-08-18T09:41:05.864Z] CLI Version:   13.15.2
+[debug] [2024-08-18T09:41:05.865Z] Platform:      win32
+[debug] [2024-08-18T09:41:05.865Z] Node Version:  v20.16.0
+[debug] [2024-08-18T09:41:05.865Z] Time:          Sun Aug 18 2024 10:41:05 GMT+0100 (British Summer Time)
+[debug] [2024-08-18T09:41:05.866Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-18T09:41:05.877Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-18T09:41:05.878Z] > authorizing via signed-in user (daodunaiya@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\dev\Pig Game
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-08-18T09:41:08.777Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-08-18T09:41:10.300Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-08-18T09:41:10.300Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2024-08-18T09:48:30.392Z] ----------------------------------------------------------------------
+[debug] [2024-08-18T09:48:30.397Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Damilola\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-08-18T09:48:30.398Z] CLI Version:   13.15.2
+[debug] [2024-08-18T09:48:30.398Z] Platform:      win32
+[debug] [2024-08-18T09:48:30.398Z] Node Version:  v20.16.0
+[debug] [2024-08-18T09:48:30.399Z] Time:          Sun Aug 18 2024 10:48:30 GMT+0100 (British Summer Time)
+[debug] [2024-08-18T09:48:30.399Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-18T09:48:30.411Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-18T09:48:30.412Z] > authorizing via signed-in user (daodunaiya@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\dev\Pig Game
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-08-18T09:48:43.886Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-08-18T09:49:06.414Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-08-18T09:49:06.415Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project pig-game-4b337 (Pig Game) 
+[info] 
+=== Hosting Setup
+[debug] [2024-08-18T09:49:20.722Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pig-game-4b337 [none]
+[debug] [2024-08-18T09:49:32.456Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pig-game-4b337 200
+[debug] [2024-08-18T09:49:32.456Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pig-game-4b337 {"projectId":"pig-game-4b337","projectNumber":"969880462481","displayName":"Pig Game","name":"projects/pig-game-4b337","resources":{"hostingSite":"pig-game-4b337"},"state":"ACTIVE","etag":"1_fcb9ded4-f415-4a5d-965f-78eccb6d15df"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-08-18T09:49:42.659Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-08-18T09:50:08.165Z] *** [apiv2] error from fetch(https://www.gstatic.com/firebasejs/releases.json, {"headers":{},"method":"GET"}): FetchError: request to https://www.gstatic.com/firebasejs/releases.json failed, reason: 
+[debug] [2024-08-18T09:50:13.174Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Damilola\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:268:49)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[error] 
+[error] Error: An unexpected error has occurred.
